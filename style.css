@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300&family=Varela+Round&display=swap');
+body{
+    background-color: #533434;;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Manrope', sans-serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    background-color: black ;
+    color: aliceblue;
+    list-style-type: none;
+    height:55px;
+    
+    
+}
+.brand img{
+    width:35px;
+    padding: 0  8px;
+
+}
+.brand{
+    display:flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    
+}
+nav ul li{
+    padding:0 12px;
+
+}
+.bottom{
+    position: sticky;
+    height: 50px;
+    background-color: black;
+    bottom:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    flex-direction: column;
+}
+.container{
+    min-height: 80vh;
+    background-color: black;
+    color:aliceblue;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 10px;
+    padding: 10px;
+    background-image: url("./assets/pexels-photo-3762865.webp") ;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+#myprogressbar{
+    width:80vw;
+    cursor: pointer;
+    
+}
+.icon{
+    margin-top:10px ;
+    
+}
+.icon{
+    cursor: pointer;
+}
+.songItem{
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin:10px 0px;
+    background-color: black;
+    border-radius: 10px;
+    right: 0px;
+    
+
+}
+.songItem img{
+    height: 40px;
+    padding: 10px 10px ;
+    border-radius:30px ;
+
+    
+
+}
+.songItem  i{
+    padding: 0px 10px;
+
+}
+
+.songInfo{
+    padding-top: 10px;
+    position: absolute;
+    left:10vw;
+    font-family: 'Varela Round', sans-serif;
+    
+}
+.songInfo img{
+    opacity:0;
+    transition: opacity 0.4s ease-in;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .bottom{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+    }
+    .songItem{
+        width:70vw;
+        font-size: 10px;
+    }
+    
+    .bottom{
+        height: 70px;
+        bottom:0;
+    }
+
+  }
+  
